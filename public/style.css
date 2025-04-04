@@ -1,0 +1,688 @@
+/*studentLogin*/
+.logpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000033;
+    text-align: center;
+    margin: 0;
+}
+.intro{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.welcome{
+    font-size: 2.5em;
+    color: #45c1ea;
+}
+.h2Wel{
+    color: #45c1ea;
+}
+.boxlog{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 370px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.boxlog > label{
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+    align-self: self-start;
+    margin-left: 40px;
+}
+.logintxt{
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 38%;
+    font-size: 2em;
+}
+
+.boxlog > input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 80%;
+    height: 30px;
+}
+.logbtn{
+    position: absolute;
+    background: #45c1ea;
+    font-weight: bolder;
+    color: #000033;
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    top: 68.5%;
+    left: 56.4%;
+}
+.forget{
+    position: absolute;
+    top: 69%;
+    left: 38%;
+    color: #45c1ea;
+    border: none;
+    background: transparent;
+}
+/* Teacher Login */
+.telogpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000033;
+    text-align: center;
+    margin: 0;
+}
+.tIntro{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.tWelcome{
+    font-size: 2.5em;
+    color: #45c1ea;
+}
+.tH2Wel{
+    color: #45c1ea;
+}
+.tBoxlog{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 370px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.tBoxlog > label{
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+    align-self: self-start;
+    margin-left: 40px;
+}
+.tLogintxt{
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 38%;
+    font-size: 2em;
+}
+
+.tBoxlog > input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 80%;
+    height: 30px;
+}
+.tLogbtn{
+    position: absolute;
+    background: #45c1ea;
+    font-weight: bolder;
+    color: #000033;
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    top: 68.5%;
+    left: 56.4%;
+}
+.tForget{
+    position: absolute;
+    top: 69%;
+    left: 38%;
+    color: #45c1ea;
+    border: none;
+    background: transparent;
+}
+/* Admin Log In */
+.adLogpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000033;
+    text-align: center;
+    margin: 0;
+}
+.adIntro{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.adWelcome{
+    font-size: 2.5em;
+    color: #45c1ea;
+}
+.adH2Wel{
+    color: #45c1ea;
+}
+.adBoxlog{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 370px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.adBoxlog > label{
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+    align-self: self-start;
+    margin-left: 40px;
+}
+.adLogintxt{
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 38%;
+    font-size: 2em;
+}
+
+.adBoxlog > input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 80%;
+    height: 30px;
+}
+.adLogbtn{
+    position: absolute;
+    background: #45c1ea;
+    font-weight: bolder;
+    color: #000033;
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    top: 68.5%;
+    left: 56.4%;
+}
+.adForget{
+    position: absolute;
+    top: 69%;
+    left: 38%;
+    color: #45c1ea;
+    border: none;
+    background: transparent;
+}
+/* SignIn */
+.signIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000033;
+    text-align: center;
+    margin: 0;
+}
+.register{
+    color: #45c1ea;
+}
+.haynaku{
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+.signbox{
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+}
+.signbox > label{
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+    align-self: self-start;
+    margin-left: 40px;
+}
+.signbox > input{
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 80%;
+    height: 30px;
+}
+.signbox > button{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+    border: none;
+    margin-left: -5px;
+    background: transparent;
+    width: 80%;
+    align-self: start;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+.chooseType{
+    display: none;
+}
+.chooseType > button{
+    border: none;
+    background: transparent;
+    width: 200px;
+}
+.pickJunior.actives{
+    background-color: gray;
+}
+.pickSenior.actives{
+    background-color: gray;
+}
+.utype{
+    display: none;
+}
+.utype > button{
+    border: none;
+    background: transparent;
+    width: 200px;
+}
+.pickStudent.active{
+    background-color: gray;
+}
+.pickTeacher.active{
+    background-color: gray;
+}
+.showUtype{
+    display: flex;
+    flex-direction: column;
+}
+.fileUpload{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.signbox > input{
+    border: none;
+    border-bottom: 2px solid black;
+}
+.regbtn{
+    position: relative;
+    background: #45c1ea;
+    font-weight: bolder;
+    color: #000033;
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    margin-left: 280px;
+    margin-top: 20px;
+}
+/* dashboard */
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000033;
+    text-align: center;
+    overflow-y: scroll;
+    margin: 0;
+}
+.fronts{
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+
+}
+.account{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.hnhslogo{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-self: center;
+}
+.accImg{
+    background-image: url('./user.png');
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-size: cover;
+}
+.dashsign{
+    position: relative;
+    color: #45c1ea;
+    margin-bottom: 20px;
+}
+.btngroup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 20px;
+}
+.btngroup > button{
+    border: none;
+    background: transparent;
+    align-self: start;
+    height: 30px;
+}
+.enrollment{
+    display: none;
+}
+.enrollment > button {
+    width: 200px;
+    border: none;
+    background: transparent;
+}
+.grades{
+    display: none;
+}
+.grades > button{
+    width: 200px;
+    border: none;
+    background: transparent;
+}
+.billing{
+    display: none;
+}
+.billing > button{
+    width: 200px;
+    border: none;
+    background: transparent;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+}
+.disptbl{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+}
+.sheesh{
+    font-size: 20px;
+    margin-top: -10px;
+}
+.huhay{
+    align-self: center;
+    margin-bottom: 20px;
+}
+.outbtn{
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    background-color: #45c1ea;
+    color: #000033;
+    font-weight: bolder;
+}
+/*teacherdash*/
+.teacherdash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.teacherTitle{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 130px;
+    background-color: #000033;
+    top: 0%;
+    left: 20%;
+}
+.teacherTitle > h1{
+    color: #45c1ea;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 350px;
+}
+.teacherTitle > img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+.teacherMenu{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: #0c0c0c;
+}
+.tAcc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 50%;
+}
+.pp {
+    position: absolute;
+    left: 70px;
+    color: white;
+}
+.tAccImg{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+.thdash{
+    position: relative;
+    color: gray;
+    right: 90px;
+    margin-top: 60px;
+}
+.menuGroup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-bottom: 1px solid gray;
+}
+.menuGroup > button{
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: gray;
+    align-self: start;
+}
+.setGroup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+}
+.setGroup > button{
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: gray;
+    align-self: start;
+}
+.helpGroup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.helpGroup > button{
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: gray;
+    align-self: start;
+}
+/* Admin Dashboard */
+.adminDash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.adminTitle{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 130px;
+    background-color: #000033;
+    top: 0%;
+    left: 20%;
+}
+.adminTitle > h1{
+    color: #45c1ea;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+.adminTitle > img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+.adminMenu{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: #0c0c0c;
+}
+.adminMenu > img{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.adminMenu > h3{
+    position: relative;
+    color: white;
+    margin-top: 20px;
+}
+.adManage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-bottom: 1px solid gray;
+}
+.adManage > button{
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: gray;
+    align-self: start;
+}
+.adManage > p{
+    position: relative;
+    color: gray;
+    right: 50px;
+}
+.manStrand{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+}
+.manStrand > button{
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: gray;
+    align-self: start;
+}
+.adSettings{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.adSettings > button{
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: gray;
+    align-self: start;
+}
+.manStud{
+    display: none;
+}
+.manStud > button{
+    width: 200px;
+    border: none;
+    background: transparent;
+    color: grey;
+}
+.manFS{
+    display: none;
+}
+.manFS > button{
+    width: 200px;
+    border: none;
+    background: transparent;
+    color: grey;
+}
+.adShow{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="signIn">
+    <h1 class="register">Registration</h1>
+    <div class="haynaku">
+        <div class="signbox">
+            <button onclick="showUstype()"><p>Usertype &#x25BC; </p></button>
+            <div class="utype">
+                <button onclick="showStudType(); highlightuserType('Student')" class="pickStudent">Student &#x25BC;</button>
+                <div class="chooseType">
+                    <button onclick="highlightStudType('Junior High')" class="pickJunior">Junior High</button>
+                    <button onclick="highlightStudType('Senior High')" class="pickSenior">Senior High</button>
+                </div>
+                <button onclick="highlightuserType('Teacher')" class="pickTeacher">Teacher</button>
+            </div>
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" class="firstname">
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" class="lastname">
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="email">
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="getuname">
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="getpass">
+            <input type="file" id="upload" class="fileUpload" placeholder="Insert info here">
+        </div>
+        <button onclick="submit()"class="regbtn">Register</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
