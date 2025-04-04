@@ -686,3 +686,6 @@
     display: flex;
     flex-direction: column;
 }
+.message{
+    color: white;
+}

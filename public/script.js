@@ -46,26 +46,33 @@ function highlightStudType(type) {
         document.querySelector(".pickTeacher").classList.remove("active");
     }
 }
-const xhr = new XMLHttpRequest();
 
 function submit(){
-    var firstname = document.getElementById("firstname").value;
-    var lastname = document.getElementById("lastname").value;
-    var email = document.getElementById("email").value;
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    const body = `/${firstname} ${lastname}/${email}/${username}/${password}/`;
+    const firstname = document.getElementById("firstname").value;
+    const lastname = document.getElementById("lastname").value;
+    const email = document.getElementById("email").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
     
+    const body = JSON.stringify({
+        firstname: firstname,
+        lastname: lastname,
+        email: email,
+        username: username,
+        password: password
+    });
+    
+    const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function(){
         if(xhr.readyState == 4 && xhr.status == 200){
-            console.log(this.responseText);
+            if(this.responseText == "OK"){
+                location.reload();
+            }
         }
     }
     
-    xhr.open("POST", "http://localhost:3000/register", true);
-    xhr.setRequestHeader('Acces-Control-Allow-Headers', '*');
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    xhr.open("POST", "http://localhost:3000/register");
+    xhr.setRequestHeader('content-type', 'application/json');
 
     xhr.send(body);
 }
