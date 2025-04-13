@@ -91,10 +91,16 @@ function studentLogIn(){
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function(){
         if(xhr.readyState == 4 && xhr.status == 200){
-            if(this.responseText == "OK"){
-                window.location.replace("/studentDashboard"); // Kadtong naa sa routes gamita
-            }else if(this.responseText == "Error"){
+            console.log(this.responseText)
+            if(this.responseText == "Error"){
                 document.querySelector(".sPaneError").classList.toggle("showSPaneError");
+            }else{
+                window.location.replace("/studentDashboard"); // Kadtong naa sa routes gamita
+
+                localStorage.setItem("username", this.responseText); // Store nato aron mahi baw'an kinsa ni login
+                
+                console.log(localStorage.getItem("username")); // kuha sa username
+                //localStorage.removeItem("username"); // delete sa username inig logout; ibutang sud sa logout nga function
             }
         }
     }
@@ -105,4 +111,4 @@ function studentLogIn(){
     xhr.send(body);
 }
 
-
+console.log(localStorage.getItem("username")); // kuha sa username

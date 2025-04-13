@@ -78,7 +78,7 @@ web.post('/studLogin', (req, res) =>{
         
         console.log(result)
         if(result.length > 0){
-            res.send("OK").status(200);
+            res.send(result[0].Username).status(200);
             web.locals.message = "OK pre";
         }else{
             res.send("Error").status(200);
