@@ -13,12 +13,12 @@
         <div class="signbox">
             <button onclick="showUstype()"><p>Usertype &#x25BC; </p></button>
             <div class="utype">
-                <button onclick="showStudType(); highlightuserType('Student')" class="pickStudent">Student &#x25BC;</button>
+                <button onclick="showStudType(); highlightuserType('Student')" class="pickStudent" value="Student">Student &#x25BC;</button>
                 <div class="chooseType">
                     <button onclick="highlightStudType('Junior High')" class="pickJunior">Junior High</button>
                     <button onclick="highlightStudType('Senior High')" class="pickSenior">Senior High</button>
                 </div>
-                <button onclick="highlightuserType('Teacher')" class="pickTeacher">Teacher</button>
+                <button onclick="highlightuserType('Teacher')" class="pickTeacher" value="Teacher">Teacher</button>
             </div>
             <label for="firstname">First name:</label>
             <input type="text" id="firstname" class="firstname">
