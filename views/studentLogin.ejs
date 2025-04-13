@@ -14,11 +14,16 @@
     <h1 class="logintxt">Student Login:</h1>
     <div class="boxlog">
         <label for="username">Username:</label>
-        <input type="text" id="username" class="studUsernameLog">
+        <input type="text" id="studUsername" class="studUsernameLog">
         <label for="password">Password: </label>
-        <input type="password" id="password" class="studPasswordLog">
+        <input type="password" id="studPassword" class="studPasswordLog">
     </div>
-    <button type="button" class="logbtn">LOGIN</button>
+    <div class="sPaneError">
+        <h1><%= message %></h1>
+        <h3>Username & Password Mismatch!</h3>
+        <button>OK</button>
+    </div>
+    <button onclick="studentLogIn()"type="button" class="logbtn">LOGIN</button>
     <button class="forget">Forgot your password?</button>
 </body>
 <script src="script.js"></script>

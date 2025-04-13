@@ -78,6 +78,38 @@
     border: none;
     background: transparent;
 }
+.sPaneError{
+    display: none;
+}
+.sPaneError > h1{
+    color: #000033;
+}
+.sPaneError > h3{
+    position: relative;
+    margin-top: -10px;
+}
+.sPaneError > button{
+    position: relative;
+    height: 35px;
+    width: 90px;
+    margin-left: 140px;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: #000033;
+    background-color: #45c1ea;
+    font-weight: bold;
+}
+.showSPaneError{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    width: 380px;
+    height: 170px;
+    top: 45%;
+    left: 37%;
+    border-radius: 8px;
+}
 /* Teacher Login */
 .telogpage{
     display: flex;
@@ -449,6 +481,12 @@
     align-self: center;
     margin-bottom: 20px;
 }
+.reportGrades_jh{
+    display: none;
+}
+.reportGrades_sh{
+    display: none;
+}
 .outbtn{
     position: relative;
     width: 80px;
@@ -566,6 +604,11 @@
     background: transparent;
     color: gray;
     align-self: start;
+}
+.teacherManage{
+    position: absolute;
+    top: 130px;
+    left: 20%;
 }
 /* Admin Dashboard */
 .adminDash{
@@ -686,6 +729,12 @@
     display: flex;
     flex-direction: column;
 }
-.message{
-    color: white;
+.adShowManage{
+    position: absolute;
+    left: 20%;
+    top: 130px;
+    width: 300px;
+    height: 300px;
+    background-color: gray;
 }
+
